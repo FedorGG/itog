@@ -21,4 +21,15 @@
         
     }
 
-   
+   }
+
+    static string[] FilterArray(string[] originalArray)
+    {
+        int count = 0;
+        foreach (string str in originalArray)
+        {
+            if (str.Length <= 3)
+            {
+                count++;
+            }
+        }
