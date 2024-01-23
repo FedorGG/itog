@@ -11,17 +11,15 @@
             Console.Write("Введите строку: ");
             originalArray[i] = Console.ReadLine();
         }
-         string[] newArray = FilterArray(originalArray);
+
+        string[] newArray = FilterArray(originalArray);
 
         Console.WriteLine("Новый массив:");
         foreach (string str in newArray)
         {
             Console.WriteLine(str);
         }
-        
     }
-
-   }
 
     static string[] FilterArray(string[] originalArray)
     {
@@ -33,7 +31,8 @@
                 count++;
             }
         }
-   string[] newArray = new string[count];
+
+        string[] newArray = new string[count];
         int index = 0;
         foreach (string str in originalArray)
         {
