@@ -11,7 +11,13 @@
             Console.Write("Введите строку: ");
             originalArray[i] = Console.ReadLine();
         }
+         string[] newArray = FilterArray(originalArray);
 
+        Console.WriteLine("Новый массив:");
+        foreach (string str in newArray)
+        {
+            Console.WriteLine(str);
+        }
         
     }
 
